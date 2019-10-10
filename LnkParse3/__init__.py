@@ -312,7 +312,7 @@ class lnk_file(object):
 
 	@staticmethod
 	def clean_line(rstring):
-		return ''.join(chr(i) for i in rstring if 128 > i > 20)
+		return ''.join(chr(i) for i in rstring if i > 20)
 
 
 	def parse_lnk_header(self):
